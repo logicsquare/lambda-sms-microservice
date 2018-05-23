@@ -1,0 +1,12 @@
+{
+  "lambda": {
+    "role": "sms-microservice-executor",
+    "name": "sms-microservice",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "2b5yv5d6wi",
+    "module": "index",
+    "url": "https://2b5yv5d6wi.execute-api.us-east-1.amazonaws.com/latest"
+  }
+}

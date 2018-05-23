@@ -1,0 +1,31 @@
+{
+  "name": "lambda-sms-microservice",
+  "version": "0.1.0",
+  "description": "An example Microservice for Lambda+API Gateway which can send SMS using several providers. Uses Claudia API Builder.",
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "start": "claudia create --name sms-microservice --region us-east-1 --api-module index --set-env-from-json claudia.env.json",
+    "deploy": "claudia update --set-env-from-json claudia.env.json"
+  },
+  "devDependencies": {
+    "claudia": "^4"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^4",
+    "nexmo": "^2.2.1",
+    "node-fetch": "^2.1.2",
+    "plivo": "^4.0.0",
+    "twilio": "^3.17.0"
+  },
+  "keywords": [
+    "lambda",
+    "sms",
+    "claudia",
+    "api"
+  ],
+  "author": "Sayan \"Riju\" Chakrabarti <s26c.sayan@gmail.com>",
+  "license": "MIT"
+}
